@@ -35,8 +35,8 @@ class MainView(QMainWindow):
         self.btn_inicio.clicked.connect(self.show_inicio)
         self.btn_inventario.clicked.connect(self.show_page_inventario)
         self.btn_registrar.clicked.connect(self.show_page_registar)
-        self.btn_eliminar.clicked.connect(self.show_page_actualizar)
-        self.btn_actualizar.clicked.connect(self.show_page_eliminar)
+        self.btn_actualizar.clicked.connect(self.show_page_actualizar)
+        self.btn_eliminar .clicked.connect(self.show_page_eliminar)
         self.btn_inicio_de_sesion.clicked.connect(self.show_page_iniciar_sesion)
 
     def show_inicio(self):
