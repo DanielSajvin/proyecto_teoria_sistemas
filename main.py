@@ -1,8 +1,7 @@
-from tkinter import *
-from inventory import Inventory
+from PyQt5.QtWidgets import QApplication
+from views import MainView
+import sys
 
-
-if __name__ == '__main__':
-    window = Tk()
-    application = Inventory(window)
-    window.mainloop()
+app = QApplication(sys.argv)
+main_view = MainView()
+sys.exit(app.exec_())

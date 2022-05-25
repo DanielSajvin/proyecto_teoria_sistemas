@@ -1,0 +1,1208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,8">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_3">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QPushButton" name="btn_menu">
+            <property name="minimumSize">
+             <size>
+              <width>35</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+border:Opx;
+}
+
+QPushButton:hover{
+background-color: rgb(207, 207, 207);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../Pictures/MENUSSSSUS.png</normaloff>../../../Pictures/MENUSSSSUS.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>572</width>
+              <height>13</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_minimizar">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+border:Opx;
+}
+
+QPushButton:hover{
+background-color: rgb(207, 207, 207);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../Pictures/MINIMIZAR.png</normaloff>../../../Pictures/MINIMIZAR.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_restaurar">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+border:Opx;
+}
+
+QPushButton:hover{
+background-color: rgb(207, 207, 207);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../Pictures/RESTAURAR.png</normaloff>../../../Pictures/RESTAURAR.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>18</width>
+              <height>18</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_maximizar">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+border:Opx;
+}
+
+QPushButton:hover{
+background-color: rgb(207, 207, 207);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../Pictures/MAXIMIZAR.png</normaloff>../../../Pictures/MAXIMIZAR.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>18</width>
+              <height>18</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_cerrar">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+border:Opx;
+}
+
+QPushButton:hover{
+background-color: rgb(207, 207, 207);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../Pictures/SALIRRRR.png</normaloff>../../../Pictures/SALIRRRR.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>18</width>
+              <height>18</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_2">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame_4">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>225</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(51, 157, 255);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QPushButton" name="btn_inicio">
+               <property name="minimumSize">
+                <size>
+                 <width>200</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+background-color: rgb(255, 255, 255);
+background-color: rgb(51, 157, 255);
+border-top-left-radius:20px;
+border-bottom-left-radius:20px;
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+border-top-left-radius:20px;
+border-bottom-left-radius:20px;
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}</string>
+               </property>
+               <property name="text">
+                <string> INICIO</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../../../Pictures/PROYECTO ESTRUCTURA DE DATOS/home-1110868_960_720.webp</normaloff>../../../Pictures/PROYECTO ESTRUCTURA DE DATOS/home-1110868_960_720.webp</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>40</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_inventario">
+               <property name="minimumSize">
+                <size>
+                 <width>200</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+background-color: rgb(255, 255, 255);
+background-color: rgb(51, 157, 255);
+border-top-left-radius:20px;
+border-bottom-left-radius:20px;
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+border-top-left-radius:20px;
+border-bottom-left-radius:20px;
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}</string>
+               </property>
+               <property name="text">
+                <string> Inventario</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../../../Pictures/PROYECTO ESTRUCTURA DE DATOS/2897785.png</normaloff>../../../Pictures/PROYECTO ESTRUCTURA DE DATOS/2897785.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>40</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_registrar">
+               <property name="minimumSize">
+                <size>
+                 <width>200</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+background-color: rgb(255, 255, 255);
+background-color: rgb(51, 157, 255);
+border-top-left-radius:20px;
+border-bottom-left-radius:20px;
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+border-top-left-radius:20px;
+border-bottom-left-radius:20px;
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}</string>
+               </property>
+               <property name="text">
+                <string>Registrar </string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../../../Pictures/PROYECTO ESTRUCTURA DE DATOS/748926.png</normaloff>../../../Pictures/PROYECTO ESTRUCTURA DE DATOS/748926.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>35</width>
+                 <height>35</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_actualizar">
+               <property name="minimumSize">
+                <size>
+                 <width>200</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+background-color: rgb(255, 255, 255);
+background-color: rgb(51, 157, 255);
+border-top-left-radius:20px;
+border-bottom-left-radius:20px;
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+border-top-left-radius:20px;
+border-bottom-left-radius:20px;
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}</string>
+               </property>
+               <property name="text">
+                <string> Actualizar</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../../../Pictures/PROYECTO ESTRUCTURA DE DATOS/107814.png</normaloff>../../../Pictures/PROYECTO ESTRUCTURA DE DATOS/107814.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>30</width>
+                 <height>35</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_eliminar">
+               <property name="minimumSize">
+                <size>
+                 <width>200</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+background-color: rgb(255, 255, 255);
+background-color: rgb(51, 157, 255);
+border-top-left-radius:20px;
+border-bottom-left-radius:20px;
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+border-top-left-radius:20px;
+border-bottom-left-radius:20px;
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}</string>
+               </property>
+               <property name="text">
+                <string>Eliminar</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../../../Pictures/PROYECTO ESTRUCTURA DE DATOS/3221897.png</normaloff>../../../Pictures/PROYECTO ESTRUCTURA DE DATOS/3221897.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>35</width>
+                 <height>35</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_inicio_de_sesion">
+               <property name="minimumSize">
+                <size>
+                 <width>200</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+background-color: rgb(255, 255, 255);
+background-color: rgb(51, 157, 255);
+border-top-left-radius:20px;
+border-bottom-left-radius:20px;
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+border-top-left-radius:20px;
+border-bottom-left-radius:20px;
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}</string>
+               </property>
+               <property name="text">
+                <string> Iniciar sesion</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../../../Pictures/PROYECTO ESTRUCTURA DE DATOS/1176390.png</normaloff>../../../Pictures/PROYECTO ESTRUCTURA DE DATOS/1176390.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>35</width>
+                 <height>35</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>158</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="layoutDirection">
+                <enum>Qt::RightToLeft</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 0, 0);
+font: 75 7pt  &quot;Open Sans Semibold&quot;</string>
+               </property>
+               <property name="text">
+                <string>Proyecto Téoria de Sistemas</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_5">
+            <property name="styleSheet">
+             <string notr="true">font: 75 9pt &quot;Open Sans Semibold&quot;
+</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <property name="spacing">
+              <number>1</number>
+             </property>
+             <property name="leftMargin">
+              <number>1</number>
+             </property>
+             <property name="topMargin">
+              <number>1</number>
+             </property>
+             <property name="rightMargin">
+              <number>1</number>
+             </property>
+             <property name="bottomMargin">
+              <number>1</number>
+             </property>
+             <item>
+              <widget class="QStackedWidget" name="stackedWidget">
+               <property name="currentIndex">
+                <number>5</number>
+               </property>
+               <widget class="QWidget" name="page_inicio">
+                <widget class="QPushButton" name="pushButton_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>571</width>
+                   <height>551</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../../../Pictures/PROYECTO ESTRUCTURA DE DATOS/universidad-rafael-landivar-logo-531484FDAB-seeklogo.com.png</normaloff>../../../Pictures/PROYECTO ESTRUCTURA DE DATOS/universidad-rafael-landivar-logo-531484FDAB-seeklogo.com.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>450</width>
+                   <height>450</height>
+                  </size>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QWidget" name="page_inventario">
+                <layout class="QVBoxLayout" name="verticalLayout_4">
+                 <item>
+                  <widget class="QLabel" name="label_62">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 12pt &quot;Open Sans Semibold&quot;</string>
+                   </property>
+                   <property name="text">
+                    <string>Productos</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QTableWidget" name="tableWidget">
+                   <column>
+                    <property name="text">
+                     <string>ID</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Código</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Producto</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Costo</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Precio</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Existencia</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Costo Total</string>
+                    </property>
+                   </column>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_4">
+                   <item>
+                    <spacer name="horizontalSpacer_2">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>308</width>
+                       <height>13</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="pushButton">
+                     <property name="minimumSize">
+                      <size>
+                       <width>100</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+border:Opx;
+}
+
+QPushButton:hover{
+background-color: rgb(207, 207, 207);
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>Volver</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="page_registrar">
+                <widget class="QLabel" name="label_6">
+                 <property name="geometry">
+                  <rect>
+                   <x>120</x>
+                   <y>30</y>
+                   <width>321</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 75 12pt &quot;Open Sans Semibold&quot;</string>
+                 </property>
+                 <property name="text">
+                  <string>Registrar un nuevo producto</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_7">
+                 <property name="geometry">
+                  <rect>
+                   <x>110</x>
+                   <y>90</y>
+                   <width>161</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 75 8pt &quot;Open Sans Semibold&quot;</string>
+                 </property>
+                 <property name="text">
+                  <string>ID del producto:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="btn_registrarse">
+                 <property name="geometry">
+                  <rect>
+                   <x>370</x>
+                   <y>440</y>
+                   <width>93</width>
+                   <height>28</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 75 8pt &quot;Open Sans Semibold&quot;</string>
+                 </property>
+                 <property name="text">
+                  <string>Registrar</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="lineEdit_reg_aso_nombre">
+                 <property name="geometry">
+                  <rect>
+                   <x>290</x>
+                   <y>90</y>
+                   <width>171</width>
+                   <height>22</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 75 8pt &quot;Open Sans Semibold&quot;</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_8">
+                 <property name="geometry">
+                  <rect>
+                   <x>110</x>
+                   <y>140</y>
+                   <width>161</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 75 8pt &quot;Open Sans Semibold&quot;</string>
+                 </property>
+                 <property name="text">
+                  <string>Código:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_9">
+                 <property name="geometry">
+                  <rect>
+                   <x>110</x>
+                   <y>340</y>
+                   <width>161</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 75 8pt &quot;Open Sans Semibold&quot;</string>
+                 </property>
+                 <property name="text">
+                  <string>Existencia:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_10">
+                 <property name="geometry">
+                  <rect>
+                   <x>110</x>
+                   <y>390</y>
+                   <width>161</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 75 8pt &quot;Open Sans Semibold&quot;</string>
+                 </property>
+                 <property name="text">
+                  <string>Costo total:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_11">
+                 <property name="geometry">
+                  <rect>
+                   <x>110</x>
+                   <y>290</y>
+                   <width>161</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 75 8pt &quot;Open Sans Semibold&quot;</string>
+                 </property>
+                 <property name="text">
+                  <string>Precio:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_14">
+                 <property name="geometry">
+                  <rect>
+                   <x>110</x>
+                   <y>240</y>
+                   <width>161</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 75 8pt &quot;Open Sans Semibold&quot;</string>
+                 </property>
+                 <property name="text">
+                  <string>Costo</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_15">
+                 <property name="geometry">
+                  <rect>
+                   <x>110</x>
+                   <y>190</y>
+                   <width>161</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 75 8pt &quot;Open Sans Semibold&quot;</string>
+                 </property>
+                 <property name="text">
+                  <string>Producto:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="lineEdit_reg_aso_nombre_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>290</x>
+                   <y>140</y>
+                   <width>171</width>
+                   <height>22</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 75 8pt &quot;Open Sans Semibold&quot;</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="lineEdit_reg_aso_nombre_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>290</x>
+                   <y>190</y>
+                   <width>171</width>
+                   <height>22</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 75 8pt &quot;Open Sans Semibold&quot;</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="lineEdit_reg_aso_nombre_4">
+                 <property name="geometry">
+                  <rect>
+                   <x>290</x>
+                   <y>240</y>
+                   <width>171</width>
+                   <height>22</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 75 8pt &quot;Open Sans Semibold&quot;</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="lineEdit_reg_aso_nombre_5">
+                 <property name="geometry">
+                  <rect>
+                   <x>290</x>
+                   <y>290</y>
+                   <width>171</width>
+                   <height>22</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 75 8pt &quot;Open Sans Semibold&quot;</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="lineEdit_reg_aso_nombre_6">
+                 <property name="geometry">
+                  <rect>
+                   <x>290</x>
+                   <y>340</y>
+                   <width>171</width>
+                   <height>22</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 75 8pt &quot;Open Sans Semibold&quot;</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="lineEdit_reg_aso_nombre_7">
+                 <property name="geometry">
+                  <rect>
+                   <x>290</x>
+                   <y>390</y>
+                   <width>171</width>
+                   <height>22</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 75 8pt &quot;Open Sans Semibold&quot;</string>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QWidget" name="page_actualizar"/>
+               <widget class="QWidget" name="page_eliminar"/>
+               <widget class="QWidget" name="page_iniciar_sesion">
+                <widget class="QLabel" name="label_12">
+                 <property name="geometry">
+                  <rect>
+                   <x>90</x>
+                   <y>30</y>
+                   <width>381</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 75 12pt &quot;Open Sans Semibold&quot;</string>
+                 </property>
+                 <property name="text">
+                  <string>Iniciar sesion como usuario</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+                <widget class="QFrame" name="frame_6">
+                 <property name="geometry">
+                  <rect>
+                   <x>160</x>
+                   <y>90</y>
+                   <width>231</width>
+                   <height>211</height>
+                  </rect>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_5">
+                  <item>
+                   <widget class="QLabel" name="label_13">
+                    <property name="styleSheet">
+                     <string notr="true">font: 75 8pt &quot;Open Sans Semibold&quot;</string>
+                    </property>
+                    <property name="text">
+                     <string>Usuario o correo electronico</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_inicia_sesion_correo">
+                    <property name="styleSheet">
+                     <string notr="true">font: 75 8pt &quot;Open Sans Semibold&quot;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_21">
+                    <property name="styleSheet">
+                     <string notr="true">font: 75 8pt &quot;Open Sans Semibold&quot;</string>
+                    </property>
+                    <property name="text">
+                     <string>Contraseña</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_inicia_sesion_contra">
+                    <property name="styleSheet">
+                     <string notr="true">font: 75 8pt &quot;Open Sans Semibold&quot;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="btn_iniciar_sesion_miembro">
+                    <property name="minimumSize">
+                     <size>
+                      <width>35</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{
+border:Opx;
+}
+
+QPushButton:hover{
+background-color: rgb(51, 157, 255);
+font: 75 8pt &quot;Open Sans Semibold&quot;;
+}
+
+</string>
+                    </property>
+                    <property name="text">
+                     <string>Iniciar Sesion</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="verticalSpacer_2">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>18</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="btn_activar_opciones">
+                    <property name="minimumSize">
+                     <size>
+                      <width>35</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{
+border:Opx;
+}
+
+QPushButton:hover{
+background-color: rgb(51, 157, 255);
+font: 75 8pt &quot;Open Sans Semibold&quot;;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Activar opciones</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
