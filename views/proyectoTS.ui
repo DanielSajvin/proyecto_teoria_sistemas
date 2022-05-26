@@ -760,7 +760,7 @@ font: 75 7pt  &quot;Open Sans Semibold&quot;</string>
                     </spacer>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton">
+                    <widget class="QPushButton" name="actualizar">
                      <property name="minimumSize">
                       <size>
                        <width>100</width>
@@ -1520,7 +1520,7 @@ font: 75 8pt &quot;Open Sans Semibold&quot;;
                   </property>
                  </column>
                 </widget>
-                <widget class="QWidget" name="">
+                <widget class="QWidget" name="layoutWidget">
                  <property name="geometry">
                   <rect>
                    <x>10</x>

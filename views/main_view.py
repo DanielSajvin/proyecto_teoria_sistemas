@@ -2,6 +2,8 @@ from PyQt5.QtCore import QPropertyAnimation
 from PyQt5.uic import loadUi
 from PyQt5.QtWidgets import QFileDialog, QMainWindow
 from PyQt5 import QtCore
+import sqlite3
+from inventory import Comunicacion
 
 
 class MainView(QMainWindow):
@@ -17,6 +19,12 @@ class MainView(QMainWindow):
         self.btn_eliminar.hide()
         self.btn_inicio_de_sesion.show()
         self.btn_restaurar.hide()
+
+        # ESTO ES LO QUE ESTUVE PROBANDO
+        self.data_base = Comunicacion()
+        # -------------------
+        self.actualizar.clicked.connect(self.actualizar_producto)
+        # AQUI TERMINA XD
 
         # Esta línea de codigo tiene que estar siempre a menos que...
         # self.btn_activar_opciones.hide()
@@ -90,3 +98,5 @@ class MainView(QMainWindow):
         animacion.setEndValue(new_width)
         animacion.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
         animacion.start()
+
+    # PARTE DEL INVENTARIO
