@@ -1,9 +1,9 @@
-from PyQt5.QtCore import QPropertyAnimation
+from PyQt5.QtCore import QPropertyAnimation, QEasingCurve
 from PyQt5.uic import loadUi
-from PyQt5.QtWidgets import QFileDialog, QMainWindow
-from PyQt5 import QtCore
-import sqlite3
+from PyQt5.QtWidgets import QFileDialog, QMainWindow, QApplication, QHeaderView
+from PyQt5 import QtCore, QtWidgets
 from inventory import Comunicacion
+from PyQt5.uic import loadUi
 
 
 class MainView(QMainWindow):
@@ -21,9 +21,9 @@ class MainView(QMainWindow):
         self.btn_restaurar.hide()
 
         # ESTO ES LO QUE ESTUVE PROBANDO
-        #self.data_base = Comunicacion()
+        #self.base_datos = Comunicacion()
         # -------------------
-        #self.actualizar.clicked.connect(self.actualizar_producto)
+        #self.actualizar.clicked.connect(self.actualiza_productos)
         # AQUI TERMINA XD
 
         # Esta línea de codigo tiene que estar siempre a menos que...

@@ -16,7 +16,7 @@ class Comunicacion:
 
     def mostrar_productos(self):
         cursor = self.conexion.cursor()
-        bd = ''SELECT * FROM productos''
+        bd = "SELECT * FROM productos"
         cursor.execute(bd)
         registro = cursor.fetchall()
         return registro
