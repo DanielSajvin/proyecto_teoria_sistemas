@@ -8,8 +8,8 @@ class Comunicacion:
 
     def insertar_producto(self, codigo, producto, costo, precio, existencia):
         cursor = self.conexion.cursor()
-        bd = '''INSERT INTO productos (ID, CODIGO, PRODUCTO, PRECIO, EXISTENCIA)
-        VALUES ({}', '{}', '{}', '{}', '{}')'''.format(codigo, producto, costo, precio, existencia)
+        bd = '''INSERT INTO productos (CODIGO, PRODUCTO, COSTO, PRECIO, EXISTENCIA)
+        VALUES ('{}', '{}', '{}', '{}', '{}')'''.format(codigo, producto, costo, precio, existencia)
         cursor.execute(bd)
         self.conexion.commit()
         cursor.close()

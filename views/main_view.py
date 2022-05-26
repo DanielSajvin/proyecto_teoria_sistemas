@@ -21,9 +21,9 @@ class MainView(QMainWindow):
         self.btn_restaurar.hide()
 
         # ESTO ES LO QUE ESTUVE PROBANDO
-        self.data_base = Comunicacion()
+        #self.data_base = Comunicacion()
         # -------------------
-        self.actualizar.clicked.connect(self.actualizar_producto)
+        #self.actualizar.clicked.connect(self.actualizar_producto)
         # AQUI TERMINA XD
 
         # Esta línea de codigo tiene que estar siempre a menos que...
