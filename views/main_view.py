@@ -100,3 +100,37 @@ class MainView(QMainWindow):
         animacion.start()
 
     # PARTE DEL INVENTARIO
+
+    def mostrar_producto(self):
+        datos = self.data_base.mostrar_productos()
+        i = len(datos)
+        self.productos.setRowCount(i)
+        tablerow = 0
+        for row in datos:
+            self.idd = row[0]
+            self.productos.serItem(tablerow, 0, QtWidgets.QTableWidgetItem(row[1]))
+            self.productos.serItem(tablerow, 1, QtWidgets.QTableWidgetItem(row[2]))
+            self.productos.serItem(tablerow, 2, QtWidgets.QTableWidgetItem(row[3]))
+            self.productos.serItem(tablerow, 3, QtWidgets.QTableWidgetItem(row[4]))
+            self.productos.serItem(tablerow, 4, QtWidgets.QTableWidgetItem(row[5]))
+            tablerow +=1
+            self.actualizar.setText("")
+            self.btn_registrarse.setText("")
+            self.pushButton_6.setText("")
+
+    def registrar_producto(self):
+        codigo = self.lineEdit_reg_aso_nombre_2.text().upper()
+        producto = self.lineEdit_reg_aso_nombre_3.text().upper()
+        costo = self.lineEdit_reg_aso_nombre_4.text().upper()
+        precio = self.lineEdit_reg_aso_nombre_5.text().upper()
+        existencia = self.lineEdit_reg_aso_nombre_6.text().upper()
+        if codigo != '' and producto != '' and costo != '' and precio != '' and existencia != '':
+            self.data_base.insertar_producto(codigo, producto, costo, precio, existencia)
+            self.btn_registrarse.setText('Productos Registrados')
+            self.lineEdit_reg_aso_nombre_2.clear()
+            self.lineEdit_reg_aso_nombre_3.clear()
+            self.lineEdit_reg_aso_nombre_4.clear()
+            self.lineEdit_reg_aso_nombre_5.clear()
+            self.lineEdit_reg_aso_nombre_6.clear()
+        else:
+            self.btn_registrarse.setText('Hay espacios vacios')
