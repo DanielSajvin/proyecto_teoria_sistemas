@@ -22,9 +22,9 @@ class Comunicacion:
 
     def busca_producto(self, nombre_producto):
         cursor = self.conexion.cursor()
-        db = '''SELECT * FROM productos WHERE PRODUCTO = {}'''.format(nombre_producto)
+        db = "SELECT * FROM productos WHERE PRODUCTO = {}".format(nombre_producto)
         cursor.execute(db)
-        nombrex = cursor.fetchall()
+        nombrex  = cursor.fetchall()
         cursor.close()
         return nombrex
 
